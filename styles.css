@@ -1,0 +1,106 @@
+@import "https://fonts.googleapis.com/css2? family = Roboto & display = swap";
+
+/*CRIAÇÃO DE VARIÁVEIS*/
+:root {
+    --color-green: #50fa7b;
+    --color-rocket: #7159c1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: black; /*COR DE FUNDO, NÃO CONFUNDIR COM COR DA FONTE*/
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+header { /*ESTILIZANDO A HEADER (TOPO DA PÁGINA)*/
+    padding:30px; /*ESPAÇAMENTO DA HEADER (ONDE FICA OS NOMES DOS LINKS)*/
+    border-bottom: 1px solid #333; /*BORDA DA HEADER, PARA SEPARAR A HEADER DOS DEMAIS ELEMENTOS DA PAGINA*/
+    background: rgba(0, 0, 0, 0.1); /*COR DA BORDA DA HEADER*/
+}
+
+header div {
+    text-align: center;
+}
+header div a { /*ESTILIZANDO OS LINKS*/
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0 30px;
+}
+
+header div a:hover { /*ADICIONANDO UM EFEITO NOS LINKS*/
+    color: #50fa7b;
+    transition: color 200ms;
+}
+
+.links {
+    text-align: center;
+}
+.links a {
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 16px;
+    text-decoration: none;
+}
+.links a:hover {
+    color: var(--color-green);
+    transition: color 200ms;
+}
+
+#wrapper {
+    text-align: center;
+    padding: 32px;
+}
+
+#wrapper img { /*ESTILIZANDO A IMAGEM DA EMPRESA*/
+    border-radius: 50%;
+    border: 5px solid var(--color-rocket);
+    margin-bottom: 32px;
+    height: 300px;
+}
+
+#wrapper h1 { /*ESTILIZANDO O NOME DA EMPRESA*/
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+#wrapper p { /*ESTILIZANDO A DESCRIÇÃO DA EMPRESA*/
+    max-width: 500px;
+    margin: 32px auto;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+/*ESTILIZANDO A LISTA DE TECNOLOGIAS*/
+#lista {
+    padding: 15px;
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+	justify-content: center;/*CENTRALIZA A LISTA NO MEIO*/
+}
+
+#lista ul { /*FONTE DA LISTA*/
+    font-size: 18px;
+    font-weight: normal; 
+    list-style-position: inside; /*COLOCA O ICONE DENTRO DA LISTA LI*/
+    list-style-type: disc;/*TIPO DE ICONE DA LISTA*/
+}
+
+#lista ul li {
+    text-align: justify;
+}
+
+/*ESTILIZANDO OS LINKS DAS REDES SOCIAIS*/
+
+#links-footer a{
+    border-bottom: 1px solid var(--color-green);
+}
