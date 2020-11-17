@@ -1,2 +1,2 @@
 # page-html
-Página simples com html
+Páginas usando HTML, CSS e JavaScript
